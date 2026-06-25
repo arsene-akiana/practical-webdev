@@ -5,11 +5,60 @@
     <title>My first page</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li style=" display:inline-block;">
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="contactus.html">Contact us</a>
+            </li>
+        </ul>
+    </nav>
     <h4>Hello from my first page!</h4>
+    <table>
+        <tr> 
+            <th>Course</th>
+            <th>Instructor Name</th>
+            <th>Start Date</th>
+        </tr>
+            <td>Javascript</td>
+            <td>Arsène AKIANA</td>
+            <td>January 10, 2027</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Gloire AKIANA</td>
+            <td>February 15, 2027</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Laure </td>
+            <td>March 20, 2027</td>
+        </tr>
+    </table>
     <p>Tell us about your course</p>
+    <p>What do you learn in this course?</p>
+    <!-- p tag allow us to define a paragraph in HTML -->
     <form >
         <div>
-          <input type="text" id="courseName">  
+            <select  id="courses" multiple size="5"> 
+                <!-- multiple attribute allows the user to select more than one option from the list -->
+                <option value="selected">--choose--</option>
+                <option value="angular">Angular</option>
+                <option value="react">React</option>
+                <option value="vue">Vue</option>
+                <option value="node.js">Node.js</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Enter your favorite Instructor : </label>
+            <!-- label tags allow us to associate a text with an input field -->
+            <input type="text" id="instructorName">
         </div>
         <p>Did you like the course?</p>
         <div>
