@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first page</title>
+		<style>
+			#courses {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.standoutLabel {
+				background-color:Gainsboro;
+			}
+			input[type=text] {
+				margin-top: 10px;
+				text-transform: uppercase;
+			}			
+		</style>
+	</head>
+	<body>
+		<h2>Hello from Skillsoft</h2>
+		<p>Tell us about <span>your</span> course</p>
+		<form>
+			<div>
+				<label>Choose a course:</label>	
+			</div>			
+			<div>
+				<select id="courses" multiple size="4">
+					<option value="" selected>--Choose--</option>
+					<option value="angular">Angular</option>
+					<option value="reactjs">React</option>
+					<option value="vuejs">Vue</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="Python">Python</option>
+				</select>
+			</div>
+			<div class="standoutLabel">
+				<label>Enter your favorite Instructor:</label>	
+			</div>
+			<div>
+				<input type="text" id="courseName">
+			</div>
+			<p>Did you like the course</p>
+			<div>
+				<input type="radio" name="like">Yes
+				<input type="radio" name="like">No
+			</div>
+			<div>
+				<button class="green_btn">Send</button>
+			</div>
+		</form>		
+	</body>
+</html>

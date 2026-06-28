@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My first page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="contactus.html">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+   <header>
+        <h1>Hello from my first page!</h1>
+    </header>
+
+    <div id="main-content">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quidem nulla odio, doloribus sapiente debitis, officiis voluptates obcaecati ut sed quibusdam quod reiciendis itaque delectus repudiandae. Impedit vitae voluptatibus delectus?
+            Asperiores eius perspiciatis dolorum voluptatibus numquam, excepturi impedit, animi repellendus corrupti placeat repudiandae quo, magnam voluptates ad quis! Quis cupiditate alias laborum nam ullam, error ut neque facere cum laudantium.
+            Quisquam in qui, nobis sequi quasi, nesciunt facere mollitia iste incidunt voluptate ullam atque. Mollitia a perspiciatis dolore tempora totam recusandae possimus debitis corrupti cumque quibusdam unde, maxime veniam laboriosam.
+        </p>
+    </div>
+    <table>
+        <tr> 
+            <th>Course</th>
+            <th>Instructor Name</th>
+            <th>Start Date</th>
+        </tr>
+            <td>Javascript</td>
+            <td>Arsène AKIANA</td>
+            <td>January 10, 2027</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Gloire AKIANA</td>
+            <td>February 15, 2027</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Laure </td>
+            <td>March 20, 2027</td>
+        </tr>
+    </table>
+    <p>Tell us about your course</p>
+    <p>What do you learn in this course?</p>
+    <!-- p tag allow us to define a paragraph in HTML -->
+    <form >
+        <div>
+            <select  id="courses" multiple size="5"> 
+                <!-- multiple attribute allows the user to select more than one option from the list -->
+                <option value="selected">--choose--</option>
+                <option value="angular">Angular</option>
+                <option value="react">React</option>
+                <option value="vue">Vue</option>
+                <option value="node.js">Node.js</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+        <div id="favorites">
+            <div >
+                <label class="standoutLabel" for="instructorName">Enter your favorite Instructor:</label>   
+                <input type="text" id="instructorName">
+            </div>
+            <div >
+                <label class="standoutLabel" for="courseName">Enter your favorite Course:</label>
+                <input type="text" id="courseName">
+            </div> 
+            <div>
+                <label>Did you like the course?</label>
+            </div>
+            <div id="likes">
+                <input type="radio" name="like"> Yes 
+                <input type="radio" name="like"> No
+            </div>
+        </div>
+        <div>
+            <button>Send</button>
+        </div>
+    </form>
+</body>
+</html>
