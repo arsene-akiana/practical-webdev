@@ -1,5 +1,10 @@
 # practical-webdev
 
+
+> A hands-on learning repository containing exercises, experiments, and small projects.
+
+## Overview
+
 Web development exercises and projects using **HTML, CSS, JavaScript, and PHP** — completed as part of my Software Engineering studies at **CFI-CIRAS** and Full Stack training at **Akieni Academy** (Brazzaville, Congo).
 
 This repository covers the full web stack, from semantic markup to server-side scripting.
