@@ -1,0 +1,31 @@
+html 
+{
+    background-color: #FFF;
+}
+
+body 
+{
+     background-color: #e8ecdb;
+     width: 1200px;
+     margin: auto;
+}
+
+table, td, th 
+{
+    border: 1px solid #000;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+td, th 
+{
+    padding: 15px;
+   
+}
+
+th 
+{
+     font-size: 36px;
+}
+
+/* la propiété border-collapse permet de fusionner les bordures des cellules adjacentes en une seule bordure. Cela donne un aspect plus propre et uniforme à la table, en évitant les doubles bordures entre les cellules. Elle peut prendre deux valeurs principales : "collapse" (fusionne les bordures) et "separate" (les bordures restent séparées). si on prends separate, on peut définir l'espacement entre les cellules avec la propriété border-spacing qui elle prends deux valeurs : la première pour l'espacement horizontal et la deuxième pour l'espacement vertical. Par exemple, border-spacing: 10px 5px; ajoutera un espacement de 10 pixels entre les colonnes et de 5 pixels entre les lignes. */

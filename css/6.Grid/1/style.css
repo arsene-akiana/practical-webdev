@@ -1,0 +1,114 @@
+
+body 
+{
+    background-color: #816363;
+}
+
+.container 
+{
+    border: 1px dashed rgb(206, 202, 21);
+    height: 500px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: max-content 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr); /* ou grid-template-rows: 1fr 1fr 1fr; */
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-flow: column;
+    justify-content: center;
+     grid-row-gap: 10px;
+    gap: 10px;
+}
+
+.item 
+{
+    border: 1px solid rgb(32, 68, 189);
+     background-color: rgb(198, 19, 19);
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.iF
+{
+    grid-column: 2 / span 2; /* ou grid-column: 2 / 4; */
+}
+/*  
+.iB
+{
+    grid-row-start: 3;
+}
+*/
+
+.iE{align-self: center;} 
+
+/* La méthode Grid est une méthode de mise en page CSS qui permet de créer des mises en page complexes et flexibles en utilisant un système de grille bidimensionnelle. Elle offre un contrôle précis sur la disposition des éléments dans les lignes et les colonnes, ce qui facilite la création de designs réactifs et adaptatifs. */
+
+/* la propriété display: grid est utilisée pour définir un conteneur comme une grille, ce qui permet de placer les éléments enfants dans des cellules de la grille.*/
+
+/* la propriété grid-template-columns est utilisée pour définir le nombre et la taille des colonnes de la grille. Elle peut prendre différentes valeurs, telles que des longueurs fixes, des pourcentages ou des unités flexibles comme fr (fraction). Par exemple, grid-template-columns: 1fr 2fr; crée une grille avec deux colonnes, où la première colonne occupe une fraction de l'espace disponible et la deuxième colonne en occupe deux. */
+
+/* la propriété grid-template-rows est utilisée pour définir le nombre et la taille des lignes de la grille. Elle peut prendre différentes valeurs, telles que des longueurs fixes, des pourcentages ou des unités flexibles comme fr (fraction). Par exemple, grid-template-rows: 1fr 2fr; crée une grille avec deux lignes, où la première ligne occupe une fraction de l'espace disponible et la deuxième ligne en occupe deux. */
+
+/* la propriété grid-template est une propriété raccourcie qui permet de définir à la fois les lignes et les colonnes de la grille en une seule déclaration. Elle combine les propriétés grid-template-rows et grid-template-columns. Par exemple, grid-template: 1fr 2fr / 1fr 2fr; crée une grille avec deux lignes et deux colonnes, où la première ligne et la première colonne occupent une fraction de l'espace disponible, tandis que la deuxième ligne et la deuxième colonne en occupent deux. Cela simplifie la syntaxe et rend le code plus lisible, surtout lorsque vous avez un grand nombre de lignes et de colonnes à définir. */
+
+
+/* grid-template-columns: repeat(3, 1fr); on peut utiliser la fonction repeat() pour répéter une valeur un certain nombre de fois. Dans ce cas, repeat(3, 1fr) signifie que nous voulons trois colonnes de largeur égale (1 fraction chacune). Cela simplifie la syntaxe et rend le code plus lisible, surtout lorsque vous avez un grand nombre de colonnes ou de lignes à définir. */
+
+/* la propriété grid-auto-rows est utilisée pour définir la taille des lignes de la grille en fonction du contenu. Par exemple, grid-auto-rows: minmax(100px, auto); crée des lignes qui ont une hauteur minimale de 100 pixels et qui peuvent s'étendre automatiquement en fonction du contenu. */
+
+/* la propriété grid-auto-columns est utilisée pour définir la taille des colonnes de la grille en fonction du contenu. Par exemple, grid-auto-columns: minmax(100px, auto); crée des colonnes qui ont une largeur minimale de 100 pixels et qui peuvent s'étendre automatiquement en fonction du contenu. */
+
+/* la propriété grid-auto-flow est utilisée pour contrôler la direction dans laquelle les éléments sont placés dans la grille. Elle peut prendre les valeurs row (empile les éléments dans les lignes), column(met les éléments dans les colonnes) ou dense(met les éléments de manière optimale pour remplir l'espace).  */
+
+/* la propriété grid-column est utilisée pour définir la position et la taille d'un élément dans la grille en spécifiant la ligne de départ et la ligne de fin de l'élément. Par exemple, grid-column: 1 / 3; place l'élément dans la première colonne et le fait s'étendre jusqu'à la troisième colonne.  grid-column: 2 / span 2; place l'élément dans la deuxième colonne et le fait s'étendre sur deux colonnes. */
+
+/* Si vous souhaitez que l'élément occupe une seule colonne, vous pouvez utiliser grid-column: 2; ou grid-column: 2 / 3; pour le placer dans la deuxième colonne sans s'étendre sur plusieurs colonnes.   */
+/* grid-column: 2 / -2; place l'élément dans la deuxième colonne et le fait s'étendre jusqu'à l'avant-dernière colonne. L'utilisation de -2 comme ligne de fin signifie que l'élément s'étendra jusqu'à la deuxième colonne à partir de la fin de la grille. Cela peut être utile lorsque vous souhaitez positionner un élément par rapport à la fin de la grille plutôt qu'au début. */
+
+/* la propriété grid-row est utilisée pour définir la position et la taille d'un élément dans la grille en spécifiant la ligne de départ et la ligne de fin de l'élément. Par exemple, grid-row: 1 / 3; place l'élément dans la première ligne et le fait s'étendre jusqu'à la troisième ligne.  grid-row: 2 / span 2; place l'élément dans la deuxième ligne et le fait s'étendre sur deux lignes.  Elle fait exactement la même chose que grid-column, mais pour les lignes. */
+
+/* min-content puis max-content sont des valeurs qui peuvent être utilisées pour définir la taille des colonnes ou des lignes dans une grille CSS. 
+min-content : La taille minimale nécessaire pour contenir le contenu de l'élément. Si le contenu est plus petit que cette taille, la colonne ou la ligne sera réduite à cette taille minimale.
+max-content : La taille maximale nécessaire pour contenir le contenu de l'élément. Si le contenu est plus grand que cette taille, la colonne ou la ligne sera étendue à cette taille maximale.  
+*/
+
+/* fit-content est une valeur qui peut être utilisée pour définir la taille des colonnes ou des lignes dans une grille CSS.
+la fonction fit-content : La taille de la colonne ou de la ligne sera ajustée pour s'adapter au contenu. Cela signifie que la colonne ou la ligne s'étendra pour occuper tout l'espace nécessaire, en fonction de la taille du contenu.
+grid-template-columns: fit-content(200px) 1fr 1fr;  */
+
+/* minmax est une fonction qui peut être utilisée pour définir la taille des colonnes ou des lignes dans une grille CSS. Elle permet de spécifier une taille minimale et une taille maximale pour une colonne ou une ligne. Par exemple, minmax(100px, 1fr) signifie que la colonne ou la ligne aura une taille minimale de 100 pixels et pourra s'étendre jusqu'à occuper une fraction de l'espace disponible (1fr). Cela permet de créer des mises en page flexibles qui s'adaptent au contenu et à la taille de l'écran.  */
+
+/* minmax(100px, auto) signifie que la colonne ou la ligne aura une taille minimale de 100 pixels et pourra s'étendre automatiquement en fonction du contenu. Cela permet de créer des mises en page flexibles qui s'adaptent au contenu et à la taille de l'écran. */
+
+/* minmax(100px, 200px) signifie que la colonne ou la ligne aura une taille minimale de 100 pixels et une taille maximale de 200 pixels. Cela permet de créer des mises en page flexibles qui s'adaptent au contenu et à la taille de l'écran, tout en limitant la taille maximale de la colonne ou de la ligne. */
+
+/* minmax(mincontent, max-content) signifie que la colonne ou la ligne aura une taille minimale égale à la taille minimale nécessaire pour contenir le contenu et une taille maximale égale à la taille maximale nécessaire pour contenir le contenu. Cela permet de créer des mises en page flexibles qui s'adaptent au contenu et à la taille de l'écran, tout en limitant la taille maximale de la colonne ou de la ligne en fonction du contenu. */
+
+/* les propriétés grid-row-start, grid-row-end, grid-column-start et grid-column-end sont des propriétés qui peuvent être utilisées pour définir la position et la taille d'un élément dans une grille CSS. Elles permettent de spécifier la ligne de départ et la ligne de fin pour les lignes et les colonnes, respectivement. Par exemple, grid-row-start: 1; place l'élément dans la première ligne, tandis que grid-row-end: 3; le fait s'étendre jusqu'à la troisième ligne. De même, grid-column-start: 2; place l'élément dans la deuxième colonne, tandis que grid-column-end: 4; le fait s'étendre jusqu'à la quatrième colonne. Ces propriétés offrent un contrôle précis sur la disposition des éléments dans la grille. */
+
+/* la propriété justify-content est utilisée pour aligner les éléments de la grille horizontalement dans le conteneur. Elle peut prendre différentes valeurs, telles que flex-start (aligne les éléments à gauche), flex-end (aligne les éléments à droite), center (centre les éléments), space-between (distribue l'espace entre les éléments) et space-around (distribue l'espace autour des éléments). Par exemple, justify-content: center; centre les éléments horizontalement dans le conteneur de la grille. */
+
+/* la propriété align-content est utilisée pour aligner les éléments de la grille verticalement dans le conteneur. Elle peut prendre différentes valeurs, telles que flex-start (aligne les éléments en haut), flex-end (aligne les éléments en bas), center (centre les éléments), space-between (distribue l'espace entre les éléments) et space-around (distribue l'espace autour des éléments). Par exemple, align-content: center; centre les éléments verticalement dans le conteneur de la grille. */
+
+/* la proprété place-content est une propriété raccourcie qui combine les propriétés justify-content et align-content. Elle permet d'aligner les éléments de la grille à la fois horizontalement et verticalement dans le conteneur. Par exemple, place-content: center; centre les éléments à la fois horizontalement et verticalement dans le conteneur de la grille. Cela simplifie la syntaxe et rend le code plus lisible, surtout lorsque vous souhaitez aligner les éléments de manière cohérente dans les deux directions. */
+
+/* la propriété justify-items est utilisée pour aligner les éléments de la grille horizontalement dans chaque cellule de la grille. Elle peut prendre différentes valeurs, telles que start (aligne les éléments à gauche), end (aligne les éléments à droite), center (centre les éléments), stretch (étire les éléments pour remplir la cellule) et baseline (aligne les éléments sur la ligne de base du texte). Par exemple, justify-items: center; centre les éléments horizontalement dans chaque cellule de la grille. Cela permet de contrôler l'alignement des éléments à l'intérieur de chaque cellule, indépendamment de l'alignement global des éléments dans le conteneur de la grille. */
+
+/* la propriété align-items est utilisée pour aligner les éléments de la grille verticalement dans chaque cellule de la grille. Elle peut prendre différentes valeurs, telles que start (aligne les éléments en haut), end (aligne les éléments en bas), center (centre les éléments), stretch (étire les éléments pour remplir la cellule) et baseline (aligne les éléments sur la ligne de base du texte). Par exemple, align-items: center; centre les éléments verticalement dans chaque cellule de la grille. Cela permet de contrôler l'alignement des éléments à l'intérieur de chaque cellule, indépendamment de l'alignement global des éléments dans le conteneur de la grille. */
+
+/* la propriété place-items est une propriété raccourcie qui combine les propriétés justify-items et align-items. Elle permet d'aligner les éléments de la grille à la fois horizontalement et verticalement dans chaque cellule de la grille. Par exemple, place-items: center; centre les éléments à la fois horizontalement et verticalement dans chaque cellule de la grille. Cela simplifie la syntaxe et rend le code plus lisible, surtout lorsque vous souhaitez aligner les éléments de manière cohérente à l'intérieur de chaque cellule. */
+
+/* la propriété justify-self est utilisée pour aligner un élément spécifique horizontalement dans sa cellule de la grille. Elle peut prendre différentes valeurs, telles que start (aligne l'élément à gauche), end (aligne l'élément à droite), center (centre l'élément) et stretch (étire l'élément pour remplir la cellule). Par exemple, justify-self: center; centre l'élément horizontalement dans sa cellule de la grille. Cela permet de contrôler l'alignement d'un élément individuel à l'intérieur de sa cellule, indépendamment de l'alignement global des éléments dans le conteneur de la grille. */
+
+/* la propriété align-self est utilisée pour aligner un élément spécifique verticalement dans sa cellule de la grille. Elle peut prendre différentes valeurs, telles que start (aligne l'élément en haut), end (aligne l'élément en bas), center (centre l'élément) et stretch (étire l'élément pour remplir la cellule). Par exemple, align-self: center; centre l'élément verticalement dans sa cellule de la grille. Cela permet de contrôler l'alignement d'un élément individuel à l'intérieur de sa cellule, indépendamment de l'alignement global des éléments dans le conteneur de la grille. */ 
+
+/* la propriété place-self est une propriété raccourcie qui combine les propriétés justify-self et align-self. Elle permet d'aligner un élément spécifique à la fois horizontalement et verticalement dans sa cellule de la grille. Par exemple, place-self: center; centre l'élément à la fois horizontalement et verticalement dans sa cellule de la grille. Cela simplifie la syntaxe et rend le code plus lisible, surtout lorsque vous souhaitez aligner un élément individuel de manière cohérente à l'intérieur de sa cellule. */
+
+ /* la propriété grid-column-gap est utilisée pour définir l'espacement entre les colonnes de la grille. Par exemple, grid-column-gap: 10px; ajoute un espacement de 10 pixels entre les colonnes. */
+
+ /* la propriété grid-row-gap est utilisée pour définir l'espacement entre les lignes de la grille. Par exemple, grid-row-gap: 10px; ajoute un espacement de 10 pixels entre les lignes. */
+
+ /* la propriété grid-gap ou gap est une propriété raccourcie qui combine les propriétés grid-column-gap et grid-row-gap. Elle permet de définir l'espacement entre les colonnes et les lignes de la grille en une seule déclaration. Par exemple, grid-gap: 10px; ajoute un espacement de 10 pixels entre les colonnes et les lignes. Cela simplifie la syntaxe et rend le code plus lisible, surtout lorsque vous souhaitez définir un espacement uniforme entre toutes les cellules de la grille. */
+ 
+/* la propriété gap est utilisée pour définir l'espacement entre les cellules de la grille. Par exemple, gap: 10px; ajoute un espacement de 10 pixels entre les cellules. */
+

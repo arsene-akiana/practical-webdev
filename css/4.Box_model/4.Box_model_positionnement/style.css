@@ -1,0 +1,53 @@
+body
+{
+    background-color: #0c685f;
+    width: 1000px;
+    margin: auto;
+}
+
+div
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    
+}
+.first
+{
+    background-color: #ff6b6b;
+    left: 50px;
+    z-index:2;
+    
+}
+
+.second
+{
+    background-color: #feca57;
+    z-index:3;
+
+}
+
+.third
+{
+    background-color: #48dbfb;
+    top: 50px;
+    left: auto;
+    z-index:1;
+}
+
+/* la propriété position permet de définir le type de positionnement d'un élément. Elle peut prendre plusieurs valeurs, notamment : "static", "relative", "absolute", "fixed", "sticky". 
+On peut utiliser la propriété position pour contrôler la position d'un élément par rapport à son conteneur parent ou par rapport à la fenêtre du navigateur. Les valeurs les plus courantes sont :
+- static : c'est la valeur par défaut, l'élément est positionné selon le flux normal du document.
+- relative : l'élément est positionné par rapport à sa position normale, et on  peut utiliser les propriétés top, right, bottom et left pour le déplacer par rapport à cette position.
+- absolute : l'élément est positionné par rapport à son conteneur parent le plus proche qui a une position relative, absolue ou fixe. Il est retiré du flux normal du document.
+- fixed : l'élément est positionné par rapport à la fenêtre du navigateur, et il reste fixe même lorsque l'utilisateur fait défiler la page.
+- sticky : l'élément est positionné en fonction du défilement de la page, il se comporte comme un élément relatif jusqu'à ce qu'il atteigne une certaine position, puis il devient fixe. */
+
+/*
+Après avoir défini la propriété position sur un élément, on peut utiliser les propriétés top, right, bottom et left pour ajuster sa position. Ces propriétés spécifient la distance entre l'élément et les bords de son conteneur parent ou de la fenêtre du navigateur, selon le type de positionnement utilisé. Par exemple, si un élément a une position relative et que l'on définit top: 20px;, il sera déplacé de 20 pixels vers le bas par rapport à sa position normale.
+top, right, bottom et left peuvent prendre des valeurs en pixels (px), en pourcentage (%), en em, rem, etc. Par exemple :
+- top: 20px; déplace l'élément de 20 pixels vers le bas.
+- right: 10%; déplace l'élément de 10% de la largeur de son conteneur vers la gauche.
+*/
+
+/* La propriété z-index permet de définir l'ordre d'empilement des éléments positionnés (c'est-à-dire ceux ayant une position relative, absolue, fixe ou sticky). Un élément avec un z-index plus élevé sera affiché au-dessus d'un élément avec un z-index plus bas. Par défaut, tous les éléments ont un z-index de 0. Il est important de noter que le z-index ne fonctionne que sur les éléments positionnés (c'est-à-dire ceux dont la propriété position est définie sur relative, absolute, fixed ou sticky). */

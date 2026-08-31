@@ -1,0 +1,59 @@
+p.modif-p 
+{
+    font-style: normal;  /* pour la police du texte, prends les valeurs : normal, italic,   */
+    font-variant: small-caps ;  /* pour la police du texte en lettres majuscule */
+    font-weight: bold; /* pour mettre le texte en gras d'un point de vue visuelle    */
+    font-size: 30px; /* pour la taille de la police, en px il s'agit d'une taille fixe et en % c'est par rapport au document (font-size: 80%;). On peut aussi mettre la taille par rapport a celle de l'element parent (ici body), on aura par exemple font-size: 1em;  ce qui veut dire 100% de la taille de body, sion avait mis 0.5em donc il aura la motié de la taille de body et etc. Si on met rem au lieu de em i-e la balise html qui devient l'element parent*/
+    /* font-sixe peut avoir plusieurs autres valeurs : xx-small, x-small, small, medium, large, x-large, xx-large  */
+    line-height:normal;
+    /* utiliser pour l'espacement entre les lignes, prend les valeurs : normal, en % (ex: 25%), en px (ex: 30px),em (ex: 0.8em)  */
+    font-family:Arial, Helvetica, sans-serif ;
+    /* utiliser pour spécifier la police de caractères de notre systeme. Pour les polices par defaut qui sont sur  
+    tous les os : serif, sans-serif, monospace, cursive*/
+    
+    /* la proprieté font est utilisé si on veut faire tout ce qui a été fait ci-dessus en une seule fois, dans cette ordre ci -dessous. Mais c'est préferable d'utiliser ce qui est ci-dessous demanière séparer  */
+    font:italic small-caps bold 20px 20px Arial, Helvetica, sans-serif;
+
+    text-decoration: underline red ; 
+    /* la premiere valeur pour les lignes : underline, overline, line-through. La deuxieme valeur pour la couleur de la ligne */
+
+    text-shadow: 2px 4px 3px #330fb7;
+    /* Pour mettre une ombre portée qui va se mettre en plus du texte, la premiere valeur (la valeur horizontale), la 2eme valeur (la valeur verticale), 3 eme valeur (dispersion de l'ombre), 4 eme (couleur de l'ombre) */
+
+    text-transform:capitalize ;
+    /* prends les valeurs : capitalize(les 1ere lettres de chaque mot en majuscule), uppercase (Tout mettre en majuxule), lowercase (Tout mettre en miniscule) */
+
+    text-align:center;
+    /* prends les valeur : left (par defaut,a gauche), center (centrer le texte), right (aligner a droite), justify (justifier) */
+
+    text-align-last: right;
+    /* Pour l'alignement de la derniere ligne d'un bloc : prends les mêmes valeurs que text-align*/
+
+    vertical-align:top;
+    /* pour l'alignement verticale surtout utilisé avec les images, prends les valeurs : baseline,sub, super, top, middle, bottom, text-bottom , text-top  */
+
+    text-indent: 15px ;
+    /* utiliser pour l'indentation du texte, prends les valeurs : en px, en em*/
+
+    text-overflow:ellipsis;
+    /* pour mettre ... au lieu d'afficher tout un long texte sur la page, prends les valeurs : clip (coupe le texte), ellipsis (ajout les ...) */
+
+  letter-spacing: 2px;
+    /* pour gerer l'espacement de lettres, prends les valeurs : en px,  */
+
+    white-space:normal;
+    /* pour gerer les espaces blanc, prends les valeurs : normal, nowrap (pas de retour a la ligne), pre (reproduit l'espacement du fichier html), pre-line, pre-wrap */
+
+    word-spacing: ;
+    /* pour gerer l'espacement de lettres, prends les valeurs : en px  */
+
+    word-break:normal ;
+    /* pour gerer la coupure des mots, prends les valeurs : normal, break-all (il coupe tout au meme endroit), keep-all */
+
+    word-wrap:normal;
+    /* pour gerer la coupure des mots, des url sans vraiment les coupés, prends les valeurs : normal, break-word */
+
+    direction:initial;
+    /* pour la direction du texte, prends les valeurs : initial, rtl (right to left), ltr (left to right) */
+
+}

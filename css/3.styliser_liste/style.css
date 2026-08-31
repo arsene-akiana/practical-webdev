@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    margin: auto; 
+    width: 1000px;
+}
+
+li {
+
+    list-style-image: url("puce.png");
+    /* pour avoir une image comme puce, en utilise les images en format PNG ou SVG car les icônes Web peuvent ne pas s'afficher correctement dans tous les navigateurs */
+    
+    list-style-position: inside; 
+    /* pour avoir l'image de puce à l'intérieur de la liste, on a aussi outside pour l'extérieur */
+
+    list-style-type: none; 
+    /* none pour supprimer le style de liste par défaut donc sans puce, square pour un carré, circle pour un cercle, lower-alpha pour une liste avec des lettres minuscules, lower-greek pour une liste avec des lettres grecques en minuscules,... */
+
+
+}

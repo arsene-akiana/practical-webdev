@@ -1,0 +1,18 @@
+body
+{
+    background-color: #0c685f;
+    width: 1000px;
+    margin: auto;
+}
+
+
+.fleft 
+{
+    float: left;
+    
+}
+
+
+/* la propriété float permet de déplacer un élément sur la gauche ou la droite de son conteneur parent. Elle peut prendre les valeurs : "left", "right", "none". */
+
+/* la propriété clear permet de contrôler le comportement des éléments flottants. Elle peut prendre les valeurs : "left", "right", "both", "none". Par exemple, si un élément a la propriété clear: both;, il sera positionné en dessous de tous les éléments flottants précédents, qu'ils soient à gauche ou à droite. Cela est utile pour éviter que le contenu suivant ne chevauche les éléments flottants et pour maintenir une mise en page propre et organisée. exemple : si vous avez plusieurs éléments flottants et que vous souhaitez qu'un élément suivant commence sur une nouvelle ligne, vous pouvez appliquer clear: both; à cet élément pour qu'il se positionne en dessous des éléments flottants précédents. */

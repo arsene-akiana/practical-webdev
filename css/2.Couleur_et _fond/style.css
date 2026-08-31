@@ -1,0 +1,24 @@
+body {
+    background-color: lightblue; /* Pour la couleur de fond de la page */
+    background-image: url("cat.jfif"); /* Pour l'image de fond de la page */
+    background-position: center; /* Pour la position de l'image de fond de la page prends les valeurs : en px (x, y), top left, top center, top right, center left, center center, center right, bottom left, bottom center, bottom right, space */
+    background-repeat: no-repeat; /* Pour la répétition de l'image de fond de la page prends les valeurs : repeat, repeat-x, repeat-y, no-repeat, round */
+    background-size: cover; /* Pour la taille de l'image de fond de la page prends les valeurs : auto, cover, contain, 100px 200px (largeur hauteur) */
+    background-origin: padding-box; /* Pour la origine de l'image de fond de la page prends les valeurs : padding-box, border-box, content-box */
+    background-attachment: fixed; /* Pour l'attachement de l'image de fond de la page prends les valeurs : scroll, fixed, local */
+
+    /* en peut rassembler toutes les propriétés de l'image de fond en une seule ligne avec la propriété background, mais toujours privilégiée la méthode séparée de chaque propriété pour la maintenance du code */
+     /* background : lightblue url("background.jpg") center no-repeat cover padding-box fixed;  */
+
+}
+
+.modif-p {
+    color: darkslateblue; 
+    /* Pour la couleur on peut mettre le nom, les valeurs hexadécimales ou les valeurs RGB. ex : #0000FF ou rgb(0, 0, 255), rgba(0, 0, 255, 0.8) avec a pour l'opacité. */
+    /* Pour la teinte, la luminosité et la saturation on utilise les fonctions hsl() et hsla(). ex : hsl(240, 100%, 50%) ou hsla(240, 100%, 50%, 0.8) respectivement teinte, luminosité et saturation, a toujours l'opacité */
+
+}
+
+
+
+/* Pour avoir des couleurs lien du site officiel W3C : https://www.w3.org/TR/2022/REC-css-color-3-20220118/ */

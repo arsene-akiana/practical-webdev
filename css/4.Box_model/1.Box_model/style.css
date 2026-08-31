@@ -1,0 +1,137 @@
+html 
+{
+    background-color: #FFF;
+}
+body,div,p 
+{
+     margin:auto;
+}
+
+body 
+{
+     background-color: #9cc425;
+     width: 800px;
+     margin-top: 25px;
+     border-style: solid;
+     border-width: 15px 19px 15px 18px;
+     -moz-border-image: url(decorative.svg) 137 127 131 131 repeat repeat;
+     -webkit-border-image: url(decorative.svg) 137 127 131 131 repeat repeat;
+     -o-border-image: url(decorative.svg) 137 127 131 131 repeat repeat;
+     border-image: url(decorative.svg) 137 127 131 131 repeat repeat;
+
+
+}
+
+div 
+{
+     background-color:#888;
+     width:600px;
+     height:auto;
+     padding:5px;
+     margin-top:25px;
+     margin-bottom:25px;
+     
+}
+
+p
+{
+     background-color: #c76f6f;
+     width: 400px;
+     padding: 10px;
+     text-align: justify;
+     overflow: scroll;
+     border: 5px dashed #e40b9c; 
+     outline: 5px dotted #045d1f;
+     outline-offset: 10px;
+}
+
+ /* la propriété height définit la hauteur du contenu, prends les valeurs : em, px, % */
+
+/* la propriété width définit la largeur du contenu, prends les valeurs : em, px, % */
+
+/* On a aussi min-width, max-width, min-height, max-height pour définir des limites. */
+
+/* le padding est l'espace entre le contenu et la bordure, c'est-à-dire l'espace intérieur. prends les valeurs : em, px, % */
+/* on aussi padding-top, padding-bottom, padding-left, padding-right pour définir le padding sur un seul côté.   */
+
+/* Si on a besoin de spécifier les 4 côtés, on peut le faire en une seule ligne : padding: 10px 20px 30px 40px; (top right bottom left) ou padding: 10px 20px; (top/bottom right/left) ou padding: 10px; (top/right/bottom/left) */
+
+/* la marge est l'espace entre la bordure et les autres éléments. c'est-à-dire l'espace extérieur. prends les valeurs : em, px, % */
+/* on aussi margin-top, margin-bottom, margin-left, margin-right pour définir la marge sur un seul côté.   */
+
+/* Si on a besoin de spécifier les 4 côtés, on peut le faire en une seule ligne : margin: 10px 20px 30px 40px; (top right bottom left) ou margin: 10px 20px; (top/bottom right/left) ou margin: 10px; (top/right/bottom/left) */
+
+/* la propriété overflow permet de gérer le contenu qui dépasse la taille de l'élément. Elle prend les valeurs : visible, hidden, scroll, auto. */
+
+/* On peut avoir overflow-x et overflow-y pour gérer le débordement horizontal et vertical séparément. Donc par exemple pour la barre de scroll avec overflow-x: scroll; overflow-y: scroll; ce qui permet d'avoir une barre de défilement sur l'axe horizontal x et vertical y. */
+
+/* la propriété overflow-wrap permet de gérer le contenu qui dépasse la taille de l'élément. Elle prend les valeurs : normal, break-word, anywhere. Elle agit comme word-wrap */ 
+
+/* margin peut avoir la valeur auto pour centrer un élément horizontalement. Par exemple:
+ margin: auto; permet de centrer un élément horizontalement et verticalement.
+
+ margin: 0 auto; permet de centrer un élément horizontalement. 
+
+ margin: 0 auto 20px auto; permet de centrer un élément horizontalement et de lui donner une marge de 20px en bas. 
+
+ margin: 10px auto; permet de centrer un élément horizontalement et de lui donner une marge de 10px en haut et en bas. 
+
+ margin: 10px auto 20px; permet de centrer un élément horizontalement et de lui donner une marge de 10px en haut, de 20px en bas et automatique à gauche et à droite. 
+
+ margin: 10px auto 20px auto; permet de centrer un élément horizontalement et de lui donner une marge de 10px en haut, de 20px en bas et automatique à gauche et à droite. 
+ */
+
+ /* la bordure est l'espace entre le padding et la marge, c'est-à-dire l'espace extérieur. prends les valeurs : em, px, % */
+ 
+ /* la propriété border permet de définir la bordure d'un élément. Elle prend les valeurs : border-width, border-style, border-color. */
+ 
+ /* la propriété border-style permet de définir le style de la bordure. Elle prend les valeurs : none, solid, dotted, dashed, double, groove, ridge, inset, outset. */
+
+ /* la propriété border-width permet de définir la largeur de la bordure. Elle prend les valeurs : thin, medium, thick, px, em, %. */
+
+ /* la propriété border-color permet de définir la couleur de la bordure. Elle prend les valeurs : color, transparent, currentColor. */
+
+ /* on peut faire cela en une seule ligne : 
+ border: 1px solid #000; (width style color) 
+ border: 1px solid; (width style) 
+ border: 1px; (width)  
+ border: solid; (style)  
+ border: #000; (color) 
+ border: none; (none) 
+ border: initial; (initial) 
+ border: inherit; (inherit) 
+ border: unset; (unset) 
+ border: revert; (revert) 
+ border: revert-layer; (revert-layer)
+ border: unset; (unset)
+ border: revert-layer; (revert-layer) 
+ */
+
+ /* on peut aussi définir la bordure sur un seul côté : border-top, border-right, border-bottom, border-left. et ça garde les mêmes valeurs que border. */
+
+ /* la propriété border-image permet de définir une image comme bordure, pour créer des bordures personnalisées. Elle prend les valeurs : border-image-source, border-image-slice, border-image-width, border-image-outset, border-image-repeat. 
+ En peut mettre tout cela en une seule ligne : border-image: url(image.png) 30 30 round; (source slice width outset repeat)
+ on peut ajouter fill pour remplir l'intérieur de la bordure avec l'image. on peut aussi mettre fill en une seule ligne : border-image: url(image.png) 30 30 round fill; (source slice width outset repeat fill)
+ */
+
+ /* 
+ la propriété border-radius permet de définir les coins arrondis d'un élément. 
+ Elle prend les valeurs : px, em, %.
+
+ border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius pour définir les coins arrondis sur un seul côté.
+
+ On peut mettre tout cela en une seule ligne : 
+ border-radius: 10px; (top-left top-right bottom-right bottom-left) 
+ border-radius: 10px 20px; (top-left/bottom-right top-right/bottom-left) 
+ border-radius: 10px 20px 30px; (top-left top-right/bottom-left bottom-right) 
+ border-radius: 10px 20px 30px 40px; (top-left top-right bottom-right bottom-left) 
+ border-radius: 50%; (circle) 
+border-radius: 50% / 50%; (ellipse) */
+
+/* la propiété outline permet de définir une bordure autour d'un élément, mais elle ne prend pas de place dans le flux du document. Elle prend les sous propriétés : outline-width, outline-style, outline-color. */
+/* la propriété outline-width prends les valeurs : thin, medium, thick, px, em, % */
+/* la propriété outline-style prends les valeurs : none, solid, dotted, dashed, double, groove, ridge, inset, outset.
+*/
+/* la propriété outline-color prends les valeurs : color, transparent, currentColor. */
+/* il peuvent être mis en une seule ligne : outline: 1px solid #000; (width style color) */
+/* la propriété outline-offset permet de définir l'espace entre l'élément et sa bordure. Elle prend les valeurs : px, em, %. */

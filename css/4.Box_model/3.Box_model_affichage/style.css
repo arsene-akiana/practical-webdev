@@ -1,0 +1,32 @@
+body
+{
+    background-color: #0c685f;
+    width: 1000px;
+    margin: auto;
+}
+
+p 
+{
+    border: 1px solid #000;
+    display: inline-block;
+    
+}
+
+img 
+{
+    opacity: 0.5;
+}
+
+img:hover 
+{
+    opacity:0.8;
+}
+
+
+/* La propriété display permet de définir le type d'affichage d'un élément. Elle peut prendre plusieurs valeurs, notamment : "inline", "block", "inline-block", "none", "inline-table", "list-item", etc. */
+
+/* un élément inline qu'on ne peut pas définir sa largeur et sa hauteur, il prend la largeur de son contenu. Pour pouvoir définir sa largeur et sa hauteur, il faut le transformer en élément block ou inline-block. Un élément block prend toute la largeur disponible et commence sur une nouvelle ligne, tandis qu'un élément inline-block se comporte comme un élément inline mais permet de définir sa largeur et sa hauteur. */
+
+/* la  propiété visibility permet de contrôler la visibilité d'un élément. Elle peut prendre deux valeurs principales : "visible" (l'élément est visible) et "hidden" (l'élément est masqué mais occupe toujours de l'espace dans le flux du document). Contrairement à la propriété display: none, qui supprime complètement l'élément du flux du document, visibility: hidden rend l'élément invisible tout en conservant son espace réservé. */
+
+/* la propriété opacity permet de définir le niveau de transparence d'un élément. Elle peut prendre des valeurs allant de 0 (complètement transparent) à 1 (complètement opaque). Par exemple, opacity: 0.5 rendra l'élément semi-transparent, tandis que opacity: 1 le rendra totalement opaque. */

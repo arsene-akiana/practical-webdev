@@ -1,0 +1,414 @@
+
+<!--===================================================================================================================
+                                            DÉFINITIONS DE CONCEPTS
+====================================================================================================================-->
+
+<!-- 1) HTML: HyperText (Liens cliquables) Markup (Baliser les élements) Language (structurer l'information)
+ est un langage de balisage utilisé pour créer des pages web. Il permet de structurer le contenu d'une page en utilisant des balises pour définir les différents éléments tels que les titres, les paragraphes, les images, les liens, etc. Le HTML est interprété par les navigateurs web pour afficher le contenu de manière visuelle aux utilisateurs. Il est souvent utilisé en combinaison avec CSS (Cascading Style Sheets) pour la mise en forme et JavaScript pour l'interactivité. -->
+
+<!-- 2) HTML n'est pas un langage de balisage plutôt qu'un langage de programmation car contrairement à un langage de programmation qui permet d'implémenter la logique le HTML sert à poser la structure et le contenu d'une page avec de la logique.  est-ce que le HTML est un langage de programmation ? Non, le HTML n'est pas un langage de programmation. C'est un langage de balisage utilisé pour structurer et présenter le contenu sur le web. Il ne permet pas d'implémenter des fonctionnalités logiques ou des algorithmes comme le ferait un langage de programmation tel que JavaScript, Python ou Java. Le HTML se concentre sur la mise en forme et l'organisation du contenu, tandis que les langages de programmation sont utilisés pour créer des applications interactives et dynamiques. -->
+
+<!-- 3) c'est quoi un Boilerplate ? -->
+ <!-- Un Boilerplate est un modèle de base que l'on utilise pour commencer un nouveau projet. Il contient les éléments de base nécessaires pour démarrer rapidement sans avoir à tout recréer from scratch. --> 
+
+<!-- 4) la différence entre id et class est que id est unique pour un élément et class peut être utilisé pour plusieurs éléments, on utilise id pour cibler un élément précis et class pour cibler plusieurs éléments avec le même style. --> 
+
+
+<!DOCTYPE html>
+<html>
+<!-- les balises metadata dans le head  -->
+ 
+ <head>
+ <meta charset="UTF-8">   <!-- pour l'encodage  -->
+ <title>Apprentissage des balises html</title> <!-- titre de la page  -->
+ <meta name="author" content="AKIANA Arsène Gloire"> <!-- pour l'accessibilité sur l'auteur  -->
+ <meta name="description" content=""> <!-- pour l'accessibilité sur la description de la page qui sera mis dans le content  -->
+ <meta name="robots" content="all"> <!-- pour l'accessibilité au niveau des robots qui parcours les pages  -->
+<!-- 
+les différent content pour name="robots" :
+        all         : index, follow
+        none        :noindex, nofollow
+        noarchive   :ne pas utiliser la page mise en cache
+        nosnippet   :pas d'extrait affiché sur les moteurs de recherche
+        noimageindex:pas d'indexation des images de la page
+-->
+<meta name="color-scheme" content="dark light"> <!-- pour l'accessibilité qui dit si notre site a un mode sombre, un mode clair, on peut boulverser cela selon notre preference  -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour la responsivité au niveau de l'ecran du peripherique qu'on utilise  -->
+</html>
+
+
+
+
+
+
+
+<!--===================================================================================================================
+                                            LES ÉLÉMENTS DU BODY
+====================================================================================================================-->
+<body>
+    
+
+<!-- balises pour hiérarchiser et delimiter le code dans le body -->
+<header>la partie du haut du site (menu de navigation, logo du site,barre de recherche,...)</header>
+<main>la partie principale du site (contenu du site)</main>
+<footer>la partie du bas du site (copyright, liens vers les réseaux sociaux,...)</footer>
+<div> div pour séparer le code en bloc</div>
+<nav>pour le menu de navigation sur le site</nav>
+<section> regroupe les éléments du site en section et logiquement en met toujours un titre au debut de la section (h1,he,...h6)</section>
+
+<article> pour un article du site (du contenu qui peut etre utiliser, article , message de commentaire,... ), il fait la même chose que section met son contenu à lui peut être retiré sans causer de problème de compréhension au site</article>
+ <article>
+    <header>
+        <h2>Titre de l'article</h2>
+    </header>
+    <p>contenu de l'article</p>
+    <footer>
+        <p>Ce contenu est redigé par <address>blablabla</address></p>
+    </footer>
+ </article>
+
+<span>pour controler des élements quand il est associé a autre chose</span>
+
+
+
+
+
+
+<!-- contrôle du texte-->
+<p> p  pour ecrire des paragraphe</p>
+<br>   <!-- la balise br permet de faire un retour à la ligne -->
+<hr>   <!--la balise <hr> pour faire un separteur horizontal -->
+<del>pour indiquer au navigateur que l'information n'est plus d'actualité </del>
+<em>pour mettre du texte en italic un texte important à indiquer au navigateur</em>
+<strong>pour mettre du texte en gras un texte important à indiquer au navigateur</strong>
+<mark>pour surligner  un texte important à indiquer au navigateur</mark>
+<q cite=""> pour mettre en évidence une citation et dans le cite on peut mettre le lien de la source de cette dernière</q>
+<cite>Pour citer un nom de document, de film, etc en gros juste utiliser pour citer le nom d'une oeuvre pas d'une personne</cite>
+<blockquote cite="pour la source"><p>Pour citer tout un gros paragraphe comme citation</p></blockquote>
+ 
+ <details>  <!-- details pour mettre additionel et summary pour modifier le nom details par defaut -->
+    <summary>Cliquez ici pour afficher l'information</summary>
+    J'aime Jésus
+</details>
+
+<!-- la balise abbr pour specifier une abbreviation -->
+ <p> Créer une page web avec le langage <abbr title="HyperText Markup Language">HTML</abbr></p>
+
+ <!-- la balise address pour spécifier une adresse  -->
+ <address>
+    Jesus Christ <br>
+    7 Rue Saint Esprit <br>
+    XXXX LOLA <br>
+    <a href="mailto:Jesus@Christ.com">Envoyer un e-mail a Christ</a>
+ </address>
+
+ <!-- la balise bdi pour mettre l'orientation du texte d'apres sa langue dans le navigateur -->
+<p>Salut: <bdi>ا ب ح ر م</bdi></p>
+
+<!-- la balise dfn permet de mettre une definition -->
+<p>HTML <dfn>est langage de informatique pour réaliser des pages web.</dfn> </p>
+
+<!-- Pour faire un lexique on utilise la balise dl pour faire une liste de finition et dt pour definition terms et dd  pour definition description -->
+<dl>
+    <dt>HTML</dt>
+    <dd>langage de informatique pour réaliser des pages web.</dd>
+    <dt>CSS</dt>
+    <dd>langage de informatique pour mettre en forme des pages web.</dd>
+</dl>
+
+<!-- la balise progress permet de mettre une barre de progression et les les attribut value pour l'etat actuel et max pour l'objectif final  -->
+Etat du projet : <progress value="25" max="100"></progress>
+
+<!-- la balise sub permet de mettre du texte en indice et sup en exposant  -->
+ <p>Formule du dioxyde de carbone : CO<sub>2</sub></p>
+ <p>Superficie : 100m<sup>2</sup></p>
+
+ <!-- la balise wbr permet de couper visuellement un long  texte, une url longue,...  pour éviter l'apparition d'une barre de scroll qui casse le design -->
+ <p>bbbbbbbbbbbbbbbbbbbbbbbbb<wbr> bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr> bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr> bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+
+ <!-- la balise code pour indiquer au navigateur que c'est du code -->
+<p> Dire bonjour : <code>print("Hello World!")</code></p>
+
+<!-- la balise samp est utilisé pour afficher ce qu'on aura en sortie de notre programme donc souvent utilisé apres  la balise code -->
+ <p>On aura a l'écran : <samp>Hello World!</samp></p>
+
+<!-- balise kbd pour donner un raccourci clavier ou une saisie d'utilisateur-->
+ <p>Raccourci pour sauvegarder : <kbd>Ctrl + S</kbd></p>
+
+<!-- la balise meter pour preciser une valeur et nom une progression  -->
+ <!-- 
+<meter> : value (valeur)
+          min (valeur minimale)
+          max (valeur maximale)
+          high (seuil où la valeur devient "haute")
+          low (seuil où la valeur devient "basse")
+          optimum (seuil où la valeur est optimale)
+  -->
+<p>Température : <meter value="15" optimum="37.4">37 degrés</meter></p>          
+
+<!-- la balise outpout pour utiliser pour un resultat de sortie -->
+ <p>2 + 4 = <output>6</output></p>
+
+<!-- la balise pre pour afficher preformater telque dans le code sur le navigateur -->
+<pre>
+Bonjour tout le monde
+
+    JE vous présente la balise pre    waouh superbe
+</pre>
+
+<!-- la balise ruby pour afficher la prononciation sur la page  -->
+<ruby>
+    あ <rp>(<rt>A</rt>)</rp>
+    り <rp>(<rt>ri</rt>)</rp>
+    が  <rp>(<rt>ga</rt>)</rp>
+    とう <rp>(<rt>tô</rt>)</rp>
+</ruby>
+
+<!-- time avec son attribut datetime permettent de gerer temps -->
+ <p>Début du concours le <time datetime="2026-09-08 08:00">08 Septembre 2026 à 8h </p>
+
+<!-- la balise var pour afficher des variables en Informatique, Mathématiques  -->
+<p>Informatique : <var>x</var> = <var>14</var></p>
+<p>Mathématique : <var>x<sup>2</sup></var> + 5</p>
+
+
+
+
+<!-- headings -->
+ <h1> h1 titre principal</h1>
+ <h2> h2 titre plus petit que h1</h2>
+ <h3> h3 titre plus petit que h2</h3>
+ <h4> h4 titre plus petit que h3</h4>
+ <h5> h5 titre plus petit que h4</h5>
+ <h6> h6 titre plus petit que h5</h6>
+
+<!-- la balise hgroup permet de faire des  sous  à un titre, comme le vois ci-dessous  -->
+<hgroup>
+    <h1>Rapport de stage</h1>
+    <p>- Développement d'un site web en PHP</p>
+</hgroup>
+
+
+
+ <!-- Links  -->
+ <a href="" target="_blank">pour ajouter des liens dans href pour le chemin,et target blank pour ouvrir le lien dans un nouvel anglet</a>
+ 
+
+
+
+
+ <!-- images  -->
+ <!-- la balise image pour insérer des images avec src pour mettre le chemin et alt pour une description -->
+  <!-- la balise figure pour bien placer l'image en section  -->
+<figure>
+    <img src="singe.jpg" alt="mon image" width="500" height="auto"> 
+    <figcaption>Info de l'image, ici fais comme singe</figcaption>
+</figure>
+ 
+<img usemap="#divinmap" src="lord.jpg" alt="image de la divinié">
+
+    <map name="divinmap">
+        <area shape="rect" coords="0,0 512,1024" href="https://www.youtube.com/watch?v=26g2styOYjA&t=4s" alt="video explicative de la colonne de feu">
+        <area shape="rect" coords="512,512 1024,1024" href="https://www.youtube.com/watch?v=SS9rm5QHOAg" alt="video nuée de gloire">
+        <area shape="rect" coords="512,0 1024,512" href="https://www.youtube.com/watch?v=HoOAXSKKNms" alt="video de l'ange du seigneiur">
+    </map>
+    <!--
+        shape = rect   -> x1,y1 x2,y2
+                circle -> x, y, r
+                poly   -> x1,y1,x2,y2,.....
+    -->
+
+
+
+
+
+ <!-- Lists  -->
+ <!-- ul  lists pour une liste qui n'a pas d'ordre -->
+<ul>
+    <li>element 1</li>
+    <li>element 2</li>
+    <li>element 3</li>
+</ul>
+
+<!-- ol  lists pour une liste d'ordonnée -->
+ <ol>
+    <li>element 1</li>
+    <li>element 2</li>
+    <li>element 3</li>
+</ol>
+
+ <!-- Si on ajoute reveserd dans ol (<ol reversed >) les elements vont s'afficher dans un ordre decroissant-->
+<ol reversed>
+    <li>element 1</li>
+    <li>element 2</li>
+    <li>element 3</li>
+</ol>
+
+<!-- Si on ajoute start dans ol les elements vont s'afficher en commencant à partir du nombre qui est donné comme valeur à start-->
+<ol start="25">
+    <li>element 1</li>
+    <li>element 2</li>
+    <li>element 3</li>
+</ol>
+<!-- Si on ajoute type  dans ol les elements vont s'afficher en commencant à partir de la valeur qui est donné à type,cette valeur peut etre (a-z ou A-Z : pour l'alphabet, i,ii,...ou I,II,... : pour les chiffres romains -->
+<ol type="A">
+    <li>element 1</li>
+    <li>element 2</li>
+    <li>element 3</li>
+</ol>
+
+
+
+
+
+<!-- Tableaux -->
+<!-- faire un tableau en html avec la balise table, thead pour le header, tbody pour le corps, tfoot pour le pied de tableau, tr pour les lignes et td pour les colonnes -->
+<!-- Caption designe Le titre du tableau, caption est facultative -->
+<!-- l'attribut rowspan dans un td ou th, fait que l'element se met le nombre de ligne egale a la valeur donne a rowspan -->
+<!-- l'attribut colspan dans un td ou th, fait que l'element se met le nombre de ligne egale a la valeur donne a rowspan -->
+<!-- la balise colgroup, permet de definir des classes appliquer aux colonnes du tableau,col avec la class colonne1 le style va s'appliquer uniquement à la colonne 1, et le col avec la class colonne2et3 avec le span = 2 pour dire que ce style va s'appliquer de la 2 a la 3 eme colonne, si on veut un style different pour chaque colonne on aura un col egale au nombre de colonne  -->
+
+<table>
+    <caption>Listing de jeux video</caption>
+    <colgroup>
+        <col class="colonne1">
+        <col class="colonne2et3" span="2"> 
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Genre</th>
+            <th>Colonne 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3">Choisis ton jeux !</td>
+        </tr>
+        <tr>
+            <td>Assassin's crid</td>
+            <td>Action-aventure</td>
+            <td>69.99$</td>
+            <td rowspan="2">Bonus</td>
+        </tr>
+        <tr>
+            <td>Rocket League</td>
+            <td>Sport</td>
+            <td>24.99$</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Pied de tableau, rarement utilisé (facultative)</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+
+
+<!-- création d'un formulaire  -->
+ <!-- form est souvent utiliser pour regrouper des élements pour faire un formulaire-->
+ <!-- l'attribut method dans form est utilisé pour l'envoie des données et il prend les valeurs selon le traitement des données : get (pour ajoute les données du formulaire au niveau de l'url de la page), post (pour les requetes dans les recherche)  -->
+<!-- l'attribut action prend pour valeur le lieu de destination des informations du formulaire  --> 
+<!-- l'attribut name pour nommer notre formulaire  -->
+ <!-- l'attribut target pour frame ou le contexte de navigation : _blank (ouvir dans un nouvel onglet du navigateur ), _self(ouvrir dans le même onglet), _parent et _top  -->
+<!-- l'attribut autocomplete prend pour valeur  "on" pour activer l'autocomplétion des informations du formulaire et "off" pour désactiver cela  --> 
+<!-- l'attribut enctype  pour spécifier le type de fichiers (pdf,...) à envoyer dans le cadre d'un formulaire où on envoie des documents --> 
+<!-- l'attribut accept-charset prend la valeur UTF-8 pour spécifier le type d'encodage des informations du formulaire  --> 
+<!-- la balise fieldset est utilisé pour séparer le formulaire en section  -->
+ <!-- Si on met diseable à l'interieur de fieldset <fieldset id="id_form" disabled></fieldset>, cela va désactiver l'ensemble des champs à l'interieur  -->
+<!-- Dans textearea les attribut maxlengh et minlengh permettent de gérer le nombre de caractères du message. l'attribut wrap permet de gérer les retours à la ligne (soft ou hard) -->
+<!-- l'attribut required fait à ce qu'un champ devienne obligatoire à remplir  -->
+<!-- dans  la balise select l'attribut size permet d'afficher directement le nombre d'element que l'on comme valeur a size  -->
+<!-- la balise datalist pour faire un champ avec la possibilité d'envoyer quelque chose qui n'est pas dans la liste  -->
+<!-- la balise legend permet de nommer le fieldset  -->
+<!-- la balise input permet de faire beaucoup de choses en lui précisant le bon type  -->
+
+
+<form action="" method="" name="Monformulaire" target="_blank" autocomplete="on" id="id_form">
+
+    <fieldset id="id_form">
+        <legend> Ma section de nom </legend>
+         <p><label for="nom">Nom</label> : <input id="nom" name="username" type="text" placeholder="Entrez votre nom"></p>
+        <p><label for="prenom">Prenom</label> : <input id="prenom" name="userfirstname" type="text" placeholder="Entrez votre nom"></p>
+        <p><label for="pwd">Mot de passe</label> : <input id="pwd" name="motdepasse" type="password" placeholder="Entrez votre password"></p>
+        <p><textarea name="article_content" rows="10" cols="60" placeholder="Entrez votre message ici..."></textarea></p>
+        <p>Choix systeme :<br>
+        <select name="Choix" id="id_form" multiple required> 
+            <optgroup label="OS">
+                <option value="win">Windows</option>
+                <option value="linux">GNU/Linux</option>
+                <option value="mac">MacOS</option>
+            </optgroup>
+            <optgroup label="Chapitres">
+                <option value="mat">Mathieu</option>
+                <option value="ja">Jacques</option>
+                <option value="je">Jean</option>
+            </optgroup>
+        </select>
+        <br><br>
+       Choisir qlq : <input list="choisgens">
+        <datalist id="choisgens">
+                <option value="glory">Glory</option>
+                <option value="arsene">Arsene</option>
+                <option value="Jesus">Jesus</option>
+            </datalist>
+        </p>
+        <input type="submit" name="valid_form" value="Envoyer">
+    </fieldset>
+   
+    <p><label for="news"> publier la news ? </label> : <input id="news" name="publishNews" type="checkbox"></p>
+    <p><label for="choix"> Votre choix </label> : <input id="choix" name="choice" type="radio"> Oui <input id="choix" name="choice" type="radio"> Non </p>
+    <p><label for="coleur">Choisis une couleur</label> : <input id="couleur" name="Fieldform" type="color" value="#FFFFFFF"></p> <!-- value pour mettre une valeur par defaut  -->
+    <p><label for="ladate">Quel date ?</label> : <input id="ladate" type="date"></p>
+    <p><label for="datetemps">Quel date et heure ?</label> : <input id="datetemps" type="datetime-local"></p>
+    <p><label for="adremail">Entrez votre E-mail</label> : <input id="adremail" name="monemail" type="email" placeholder="ex : imboto@gmail.com"></p>
+    <p><label for="myphone">Numero</label> : <input id="myphone" name="phonenumber" type="tel" placeholder="Ex: +242 000000001 "></p>
+    <p><label for="mymonth">Entrer le mois </label> : <input id="mymonth" name="lemois" type="month"></p>
+    <p><label for="myweek">Entrer le semaine </label> : <input id="myweek" name="semaine" type="week"></p>
+    <p><label for="temps"> Entrer l'heure </label> : <input id="temps" type="time"></p> 
+    <p><label for="_search"> Recherche</label> : <input id="_search" name="larecherche" type="search" placeholder="tape ta recherche ici "></p>
+    <p><label for="valeurs">choisis la valeur </label> : <input id="valeurs" name="barevaleur" type="range" min="0" max="100" step="10"></p> <!-- le step a 10 veut dire que ça va de 10+ a chaque fois  -->
+    <p><label for="valeur">choisis la valeur </label> : <input id="valeur" name="casevaleur" type="number"  value="20" min="0" max="100" step="10"></p> <!-- le step a 10 veut dire que ça va de 10+ a chaque fois  -->
+    <p><label for="invisible">Champs invisible</label> : <input id="invisible" name="champinvisible" type="hidden"></p>
+    <p><label for="effacer"> Effacez vos infos </label> : <input id="effacer" type="reset" value="Efface"></p> 
+    <p><label for="connexion"> Enregistrez vos infos </label> : <input id="connexion" type="submit" value="Se connecter"></p> 
+    <p><label for="fichier"> Entrer votre fichier </label> : <input id="fichier" type="file"></p> 
+    <p><label for="uneurl"> Entrer votre url </label> : <input id="uneurl" type="url"></p> 
+    <button formmethod="post" formaction="www.blabla.com" type="submit">Cliquez ici </button>
+
+</form>
+
+
+<!-- Sons et Vidéos  -->
+<!-- 
+Format Audios : mp3 (compatible partout)
+                wav (compatible partout sauf Internet Exploreur)
+                ogg (compatible partout sauf Internet Exploreur et Safari)
+
+Format Audios : mp4 (compatible partout)
+                webm (compatible partout sauf Internet Exploreur et Safari)
+                ogg (compatible partout sauf Internet Exploreur et Safari)
+-->
+<!-- Dans la source on met le type audio/mpeg pour mp3, audio/wav pour wav et audio/ogg pour ogg  -->
+<!-- l'attribut control permet de controler le sons, l'attribut muted pour off le son, loop pour jouer le son en boucle, preload="metadata", fait qu'il n'est pas pris en compte au chargement de la page il sera chargé dans la page si l'utilisateur clique sur lecture -->
+<!-- Dans la source on met le type video/mp4 pour mp4, video/wav pour wav et video/ogg pour ogg  -->
+<!-- l'attribut poster pour mettre une miniature a la video  -->
+
+<audio controls preload="metadata">
+    <source src="C:\Users\glory\Videos\Outils Montages\JP MAV_l amour_agapao.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'audio 
+    <!-- ce message s'affiche dans ce cas -->
+</audio>
+ <br><br><br>
+<video controls preload="metadata" poster="miniature.jpg" src="Introduction Reunions.mp4" type="video/mp4" width="640" height="auto">
+    Votre navigateur ne supporte pas la video 
+    <!-- ce message s'affiche dans ce cas -->
+</video>
+
+</body>
+</html>

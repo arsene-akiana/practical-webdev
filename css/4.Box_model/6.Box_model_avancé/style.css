@@ -1,0 +1,46 @@
+body 
+{
+    background-color: #0c685f;
+    width: 800px;
+    margin: auto;
+}
+
+#wrapper 
+{
+    border: 1px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    padding: 5px;
+    
+}
+
+#wrapper,.bloc1, .bloc2
+{
+    width: 100%;
+}
+
+.bloc1, .bloc2
+{
+    box-sizing: border-box;
+}
+
+.bloc1
+{
+    background-color: #6aaf36;
+}
+
+.bloc2
+{
+    background-color: #a91d13;
+    border: 10px solid #2a0fc1;
+    padding: 20px;
+    outline: 5px solid #f1f1f1;
+}
+
+
+/* la propriété box-shadow permet d'ajouter une ombre portée à un élément. Elle peut prendre plusieurs valeurs, notamment la couleur de l'ombre, le décalage horizontal et vertical, le flou et l'étendue de l'ombre. Par exemple, box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); ajoutera une ombre noire semi-transparente avec un décalage de 5 pixels à droite et en bas, un flou de 10 pixels et une étendue de 0 pixels. Cela peut donner un effet de profondeur et de relief à l'élément, en le faisant ressortir visuellement par rapport aux autres éléments de la page. */
+
+/* la propriété box-sizing permet de définir comment la largeur et la hauteur d'un élément sont calculées. Elle peut prendre deux valeurs principales : "content-box" (la largeur et la hauteur incluent uniquement le contenu de l'élément) et "border-box" (la largeur et la hauteur incluent le contenu, les bordures et les marges). Par exemple, si un élément a une largeur de 200 pixels, une bordure de 10 pixels et un padding de 20 pixels, sa largeur totale sera de 240 pixels avec "content-box" et de 200 pixels avec "border-box". Cela peut être utile pour contrôler la taille des éléments et éviter les problèmes de débordement ou de chevauchement. 
+Il faut noter que le padding et border étant des propriétés qui s'appliquent à l'intérieur de la boîte de l'élément, elles ne sont pas incluses dans la largeur et la hauteur de l'élément avec "content-box", mais elles le sont avec "border-box".  Alors que le outline et le margin étant des propriétés qui s'appliquent à l'extérieur de la boîte de l'élément, ils sont inclus dans la largeur et la hauteur de l'élément avec "content-box", mais pas avec "border-box".
+Donc en utilisant border-box, cela ne prendra pas en compte le outline et margin dans le calcul de la largeur et de la hauteur de l'élément, donc il faut le faire manuellement */
+

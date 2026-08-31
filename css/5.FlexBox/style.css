@@ -1,0 +1,76 @@
+
+body 
+{
+    background-color: #f0f0f0;
+    margin: auto;
+    width: 100%;
+}
+
+.container 
+{
+    background-color: rgb(32, 68, 189);
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: flex-start;
+    
+
+}
+
+.cont-item 
+{
+    background-color: rgb(198, 19, 19);
+    border: 1px solid rgb(206, 202, 21);
+    
+}
+.order-1 { order: 1; }
+.order-2 { order: 3; }
+.order-3 { order: 2; }
+.order-4 { order: 4; }
+
+
+.obj1 { flex-grow: 1; flex-shrink: 2; flex-basis: auto;}
+.obj2 { flex-grow: 1; flex-shrink: 1;}
+.obj3 { flex-grow: 1; flex-shrink: 1; }
+.obj4 { flex: 1 1 auto; }
+
+.obj2 
+{
+    align-self: stretch;
+}
+
+
+
+
+/* la méthode Flexbox est une technique de mise en page CSS qui permet de créer des mises en page flexibles et réactives. Elle est particulièrement utile pour aligner et distribuer l'espace entre les éléments d'un conteneur, même lorsque leur taille est inconnue ou dynamique. Elle permet de gérer facilement l'alignement, la direction et l'ordre des éléments enfants dans un conteneur, offrant ainsi une grande flexibilité pour la conception de sites web modernes. On peut l'utiliser pour aligner des éléments horizontalement ou verticalement, créer des grilles complexes, et gérer l'espace entre les éléments de manière efficace. Flexbox est largement supporté par les navigateurs modernes, ce qui en fait un choix populaire pour les développeurs web souhaitant créer des interfaces utilisateur adaptatives et esthétiques. */
+
+/* la propriété display: flex; est utilisée pour activer le modèle Flexbox sur un conteneur. Cela permet aux éléments enfants de ce conteneur d'être disposés selon les règles de Flexbox, offrant ainsi une grande flexibilité dans la mise en page et l'alignement des éléments. En utilisant display: flex;, les développeurs peuvent facilement contrôler la direction, l'alignement et la distribution de l'espace entre les éléments enfants, ce qui facilite la création de mises en page réactives et adaptatives. */
+
+/* la propriété inline-flex est similaire à display: flex;, mais elle permet au conteneur de se comporter comme un élément en ligne, ce qui signifie qu'il peut être placé à côté d'autres éléments en ligne. Cela est particulièrement utile lorsque vous souhaitez créer des mises en page flexibles tout en conservant le flux normal du document. En utilisant inline-flex, les développeurs peuvent bénéficier des avantages de Flexbox tout en maintenant la disposition en ligne des éléments, ce qui offre une plus grande flexibilité dans la conception de l'interface utilisateur. */
+
+/* la propriété flex-direction est utilisée pour définir la direction dans laquelle les éléments enfants d'un conteneur Flexbox sont disposés. Elle peut prendre plusieurs valeurs, telles que row (par défaut, les éléments sont disposés horizontalement de gauche à droite), row-reverse (les éléments sont disposés horizontalement de droite à gauche), column (les éléments sont disposés verticalement de haut en bas) et column-reverse (les éléments sont disposés verticalement de bas en haut). En utilisant flex-direction, les développeurs peuvent facilement contrôler l'orientation des éléments dans un conteneur Flexbox, ce qui permet de créer des mises en page variées et adaptées aux besoins spécifiques du design. */
+
+/* la propriété flex-wrap est utilisée pour contrôler le comportement des éléments enfants d'un conteneur Flexbox lorsqu'ils dépassent la largeur ou la hauteur du conteneur. Par défaut, les éléments sont disposés sur une seule ligne, mais en utilisant flex-wrap, les développeurs peuvent permettre aux éléments de se répartir sur plusieurs lignes si nécessaire. Les valeurs possibles pour flex-wrap sont nowrap (par défaut, les éléments ne se replient pas), wrap (les éléments se replient sur plusieurs lignes si nécessaire) et wrap-reverse (les éléments se replient sur plusieurs lignes dans l'ordre inverse). En utilisant flex-wrap, les développeurs peuvent créer des mises en page plus flexibles et adaptatives, en s'assurant que les éléments restent visibles et bien organisés même lorsque l'espace disponible est limité. */
+
+/* la propriété flex-flow est utilisée pour définir l'ordre et la direction dans lesquels les éléments enfants d'un conteneur Flexbox sont disposés. Elle combine les propriétés flex-direction et flex-wrap en une seule propriété, permettant aux développeurs de contrôler à la fois l'orientation des éléments et leur comportement de repliement. Les valeurs possibles pour flex-flow sont des combinaisons de row, row-reverse, column, column-reverse avec nowrap, wrap ou wrap-reverse. En utilisant flex-flow, les développeurs peuvent créer des mises en page plus complexes et adaptatives, en ajustant facilement l'ordre et la disposition des éléments enfants dans un conteneur Flexbox. */
+
+/* la propriété justify-content est utilisée pour aligner et distribuer l'espace entre les éléments enfants d'un conteneur Flexbox le long de l'axe principal. Elle permet aux développeurs de contrôler la position des éléments dans le conteneur, en ajustant leur espacement et leur alignement. Les valeurs possibles pour justify-content incluent flex-start (par défaut, les éléments sont alignés au début de l'axe), flex-end (les éléments sont alignés à la fin de l'axe), center (les éléments sont centrés le long de l'axe), space-between (l'espace est distribué uniformément entre les éléments, avec le premier élément au début et le dernier à la fin), space-around (l'espace est distribué uniformément autour des éléments) et space-evenly (l'espace est distribué uniformément entre les éléments, y compris aux extrémités). En utilisant justify-content, les développeurs peuvent créer des mises en page plus équilibrées et esthétiques, en ajustant facilement l'espacement et l'alignement des éléments enfants dans un conteneur Flexbox. */
+
+/* la propriété align-items est utilisée pour aligner les éléments enfants d'un conteneur Flexbox le long de l'axe transversal (perpendiculaire à l'axe principal). Elle permet aux développeurs de contrôler la position verticale des éléments dans le conteneur, en ajustant leur alignement par rapport à l'axe transversal. Les valeurs possibles pour align-items incluent stretch (par défaut, les éléments s'étirent pour remplir le conteneur), flex-start (les éléments sont alignés au début de l'axe transversal), flex-end (les éléments sont alignés à la fin de l'axe transversal), center (les éléments sont centrés le long de l'axe transversal) et baseline (les éléments sont alignés selon leur ligne de base). En utilisant align-items, les développeurs peuvent créer des mises en page plus harmonieuses et esthétiques, en ajustant facilement l'alignement vertical des éléments enfants dans un conteneur Flexbox. */
+
+/* la propriété order est utilisée pour définir l'ordre dans lequel les éléments enfants d'un conteneur Flexbox sont affichés. Par défaut, les éléments sont affichés dans l'ordre dans lequel ils apparaissent dans le code HTML, mais en utilisant la propriété order, les développeurs peuvent modifier cet ordre sans avoir à réorganiser le code HTML. Les valeurs possibles pour order sont des nombres entiers, où un nombre inférieur indique un ordre plus élevé (les éléments avec un ordre plus bas apparaissent avant ceux avec un ordre plus élevé). En utilisant order, les développeurs peuvent créer des mises en page plus flexibles et adaptatives, en ajustant facilement l'ordre d'affichage des éléments enfants dans un conteneur Flexbox. */
+
+/* la propriété flex-grow est utilisée pour définir la capacité d'un élément enfant d'un conteneur Flexbox à s'étendre et à occuper l'espace disponible le long de l'axe principal. Elle permet aux développeurs de contrôler la taille relative des éléments dans le conteneur, en ajustant leur capacité à croître ou à rétrécir en fonction de l'espace disponible. Les valeurs possibles pour flex-grow sont des nombres entiers, où un nombre plus élevé indique une plus grande capacité à s'étendre (les éléments avec un flex-grow plus élevé occuperont plus d'espace que ceux avec un flex-grow plus faible). En utilisant flex-grow, les développeurs peuvent créer des mises en page plus dynamiques et adaptatives, en ajustant facilement la taille des éléments enfants dans un conteneur Flexbox en fonction de l'espace disponible. */
+
+/* la propriété flex-shrink est utilisée pour définir la capacité d'un élément enfant d'un conteneur Flexbox à se rétrécir lorsque l'espace disponible est limité le long de l'axe principal. Elle permet aux développeurs de contrôler la taille relative des éléments dans le conteneur, en ajustant leur capacité à se réduire en fonction de l'espace disponible. Les valeurs possibles pour flex-shrink sont des nombres entiers, où un nombre plus élevé indique une plus grande capacité à se rétrécir (les éléments avec un flex-shrink plus élevé occuperont moins d'espace que ceux avec un flex-shrink plus faible). En utilisant flex-shrink, les développeurs peuvent créer des mises en page plus flexibles et adaptatives, en ajustant facilement la taille des éléments enfants dans un conteneur Flexbox lorsque l'espace disponible est limité. */
+
+/* la propriété flex-basis est utilisée pour définir la taille initiale d'un élément enfant d'un conteneur Flexbox avant que l'espace disponible ne soit distribué. Elle permet aux développeurs de contrôler la taille de base des éléments dans le conteneur, en ajustant leur largeur ou leur hauteur initiale en fonction de l'axe principal. Les valeurs possibles pour flex-basis peuvent être des longueurs spécifiques (comme px, em, %, etc.) ou auto (par défaut, la taille de l'élément est déterminée par son contenu). En utilisant flex-basis, les développeurs peuvent créer des mises en page plus précises et adaptatives, en ajustant facilement la taille initiale des éléments enfants dans un conteneur Flexbox avant que l'espace disponible ne soit réparti entre eux. */
+
+/* la propriété flex est une propriété raccourcie qui combine les propriétés flex-grow, flex-shrink et flex-basis en une seule déclaration. Elle permet aux développeurs de définir la capacité d'un élément enfant d'un conteneur Flexbox à s'étendre, se rétrécir et sa taille initiale en une seule ligne de code. Les valeurs possibles pour flex peuvent être des combinaisons de nombres entiers pour flex-grow et flex-shrink, ainsi que des longueurs spécifiques ou auto pour flex-basis. En utilisant la propriété flex, les développeurs peuvent créer des mises en page plus concises et adaptatives, en ajustant facilement la taille et le comportement des éléments enfants dans un conteneur Flexbox avec une seule déclaration. */
+
+/* la propriété align-self est utilisée pour définir l'alignement d'un élément enfant spécifique d'un conteneur Flexbox le long de l'axe transversal, indépendamment de l'alignement défini par la propriété align-items du conteneur. Elle permet aux développeurs de contrôler la position verticale d'un élément particulier dans le conteneur, en ajustant son alignement par rapport à l'axe transversal. Les valeurs possibles pour align-self incluent auto (par défaut, l'élément hérite de l'alignement défini par align-items), stretch (l'élément s'étire pour remplir le conteneur), flex-start (l'élément est aligné au début de l'axe transversal), flex-end (l'élément est aligné à la fin de l'axe transversal), center (l'élément est centré le long de l'axe transversal) et baseline (l'élément est aligné selon sa ligne de base). En utilisant align-self, les développeurs peuvent créer des mises en page plus personnalisées et adaptatives, en ajustant facilement l'alignement vertical d'un élément enfant spécifique dans un conteneur Flexbox.  */
+
+/* la propriété gap est utilisée pour définir l'espacement entre les cellules de la grille. Par exemple, gap: 10px; ajoute un espacement de 10 pixels entre les cellules. */

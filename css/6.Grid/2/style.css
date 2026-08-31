@@ -1,0 +1,41 @@
+body 
+{
+    background-color: #816363;
+}
+
+.container 
+{
+    border: 1px dashed rgb(206, 202, 21);
+    height: 500px;
+    width: 800px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-areas:   "entete entete entete"
+                           "principal . lateral"
+                           "pied pied pied";
+}
+
+
+.item 
+{
+    border: 1px solid rgb(32, 68, 189);
+     background-color: rgb(198, 19, 19);
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+header{grid-area:entete;}
+section{grid-area:principal;}
+aside{grid-area:lateral;}
+footer{grid-area:pied;}
+
+
+
+/* La propriété grid-template-areas permet de définir des zones nommées dans la grille, ce qui facilite le placement des éléments en utilisant ces noms. Elle est utilisée pour créer une structure de grille plus lisible et compréhensible. le point d'exclamation "." est utilisé pour indiquer que la zone est vide et ne contient aucun élément.  */
+
+
+/* la propriété grid-area permet de définir la position d'un élément dans la grille en spécifiant les lignes et les colonnes qu'il occupe. Elle peut être utilisée pour placer un élément à un endroit précis dans la grille, en définissant les lignes et les colonnes de début et de fin. */
+
+

@@ -1,0 +1,77 @@
+body
+{
+    background-color: #EEE;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: auto minmax(150px, 300px);
+    grid-template-areas: "entete entete"
+                         "principal barre"
+                         "pied pied"; 
+}
+
+header 
+{
+    grid-area: entete;
+   
+}
+
+section, aside
+{
+    padding: 20px;
+}
+section
+{
+    background-color: #352b2b;
+    grid-area: principal;
+}
+
+aside
+{
+    background-color: #4e0d0d;
+    grid-area: barre;
+}
+
+footer
+{
+    background-color: #606d14;
+    grid-area: pied;
+}
+
+@media all and (max-width: 800px) 
+{
+        
+    .container
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: "entete "
+                            "principal"
+                            "barre"
+                            "pied"; 
+    }
+}
+
+
+
+
+
+
+/* Les media queries permettent de modifier le style d'une page web en fonction de la taille de l'écran ou du périphérique utilisé. Cela permet de créer des designs réactifs qui s'adaptent à différents appareils, tels que les ordinateurs de bureau, les tablettes et les smartphones. */
+
+/* la propriété @media(width) est utilisée pour définir des règles CSS spécifiques en fonction de la largeur de l'écran. Par exemple, vous pouvez utiliser @media(max-width: 600px) pour appliquer des styles uniquement lorsque la largeur de l'écran est inférieure ou égale à 600 pixels. Cela permet de créer des mises en page flexibles et adaptées aux différents appareils, améliorant ainsi l'expérience utilisateur. */
+ /* la requête @media(max-width: 600px) est utilisée pour appliquer des styles CSS spécifiques lorsque la largeur de l'écran est inférieure ou égale à 600 pixels. Cela permet d'adapter la mise en page et le design d'un site web aux appareils mobiles, offrant ainsi une meilleure expérience utilisateur sur les petits écrans. */
+
+ /* la propriété @media(min-width: 600px) sert à appliquer des styles lorsque la largeur de l'écran est supérieure à 600 pixels. */
+ 
+ /* la propriété @media prends plusieurs types d'appareils  qui sont all (pour tous les appareils), print (pour l'impression), screen (pour les écrans), speech (pour les lecteurs d'écran) et handheld (pour les appareils portables). Cela permet de cibler différents types d'appareils et d'adapter le style en conséquence.
+ /* ex *emple : @media screen and (max-width: 600px) { ... } pour appliquer des styles uniquement aux écrans dont la largeur est inférieure ou égale à 600 pixels. */
+
+ /* la propriété @media screen and (max-width: 600px) est utilisée pour appliquer des styles CSS spécifiques aux écrans dont la largeur est inférieure ou égale à 600 pixels. Cela permet d'adapter la mise en page et le design d'un site web aux appareils mobiles, offrant ainsi une meilleure expérience utilisateur sur les petits écrans. */
