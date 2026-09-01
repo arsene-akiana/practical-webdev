@@ -1,0 +1,24 @@
+
+
+Le langage Javascript :
+        - Object, Array, Math, Set, etc.
+        -BOM : Browser Object Model
+            window.document (Document Object Model)
+            window.screen
+            window.navigator
+            window.history
+            window.location
+
+
+            -API Canvas
+            -API Fetch
+
+
+        -XMLHttpRequest
+
+ 
+ liens pour voir les choses à approfondir avec  JS :
+
+ https://spec.whatwg.org/
+ https://developer.mozilla.org/en-US/docs/Web/API
+ 
