@@ -1,0 +1,72 @@
+
+*
+{
+    box-sizing: border-box;         
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: #111;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+}
+main
+{
+    padding:15px;
+}
+h1
+{
+    color: #c8a94b;
+    font-size: 3em;
+    margin: 25px 0px 50px 0px;
+    text-align: center;
+}
+h2
+{
+    color:#a38a42;
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+p
+{
+    padding: 15px 0px 15px 0px;
+}
+footer p
+{
+    border-top: 1px solid #999;
+    margin-top: 25px;
+    text-align: center;
+}
+fieldset
+{
+    border: 1px solid #a38a42;
+    margin: 10px;
+    padding: 15px;
+}
+legend
+{
+    color: #c8a94b;
+}
+input [type=submit]
+{
+    margin:0 0 0 10px;
+    padding: 3px;
+}
+
+table, th, td
+{
+    border: 1px dashed #888;
+    border-collapse: collapse;
+}
+th, td
+{
+    padding: 10px;
+}
+.red{color:#de4d5c;}
+.blue{color:#4d91de;}
+.green{color:#4dde63;}
